@@ -7,7 +7,7 @@ class Login{
         this.password='//input[@type="password"]'
         this.continue='//div[text()="Continue"]'
         this.login='//div[text()="Log in"]'
-        
+       
 
     }
     async loginfun(baseurl,email,password)
