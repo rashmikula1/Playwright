@@ -6,7 +6,7 @@ export class DashboardPage {
     }
 
     async navigateToProject(projectName) {
-      await this.page.locator(`//*[text()="${projectName}"]`).waitFor({ state: 'visible' });
+     // await this.page.locator(`//*[text()="${projectName}"]`).waitFor({ state: 'visible' });
         await this.page.locator(`//*[text()="${projectName}"]`).click();
     }
 

@@ -1,16 +1,16 @@
 import { test, expect } from '@playwright/test';
 const{POManager}=require('../pages/POManager')
-const dataset= JSON.parse(JSON.stringify(require('../Utils/CredentialsData.json')))
-
+const datasetCredential= JSON.parse(JSON.stringify(require('../Utils/CredentialsData.json')))
+const datasetTestCase= JSON.parse(JSON.stringify(require('../Utils/TestCaseData.json')))
 test.describe('Asana Test Suite', () => {
     test.beforeEach(async ({ page }) => {
       const poManager = new POManager(page);
       const Login = poManager.Login // Get Login page object
   
       await Login.loginfun(
-        dataset.credentials.baseurl,
-        dataset.credentials.email,
-        dataset.credentials.password
+        datasetCredential.credentials.baseurl,
+        datasetCredential.credentials.email,
+        datasetCredential.credentials.password
       );
       
     });
@@ -29,7 +29,7 @@ const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
 await page.screenshot({ path: `${path}/failure-screenshot-${timestamp}.png` });
       }
     });
-    dataset.testCases.forEach((testCase) => {
+    datasetTestCase.testCases.forEach((testCase) => {
       test(testCase.name, async ({ page }) => {
         const poManager = new POManager(page);
         const DashboardPage = poManager.DashboardPage; // Get Dashboard page object

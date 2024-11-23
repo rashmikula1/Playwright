@@ -1,0 +1,55 @@
+{
+   
+  "testCases": [
+    {
+      "name": "Test Case 1",
+      "project": "Cross-functional project plan, Project",
+      "task": "Draft project brief",
+      "column": "To do",
+      "tags": ["Non-Priority", "On track"],
+      "i":1
+    },
+    {
+      "name": "Test Case 2",
+      "project": "Cross-functional project plan, Project",
+      "task": "Schedule kickoff meeting",
+      "column": "To do",
+      "tags": ["Medium", "At risk"],
+      "i":3
+    },
+    {
+      "name": "Test Case 3",
+      "project": "Cross-functional project plan, Project",
+      "task": "Share timeline with teammates",
+      "column": "To do",
+      "tags": ["High", "Off track"],
+      "i":2
+    },
+    {
+      "name": "Test Case 4",
+      "project": "Work Requests",
+      "task": "[Example] Laptop setup for new hire",
+      "column": "New Requests",
+      "tags": ["Medium priority", "Low effort", "New hardware", "Not Started"],
+      "i":1
+
+    },
+    {
+      "name": "Test Case 5",
+      "project": "Work Requests",
+      "task": "[Example] Password not working",
+      "column": "In Progress",
+      "tags": ["Low priority","Low effort",  "Password reset", "Waiting"],
+      "i":3
+    },
+    {
+      "name": "Test Case 6",
+      "project": "Work Requests",
+      "task": "[Example] New keycard for Daniela V",
+      "column": "Completed",
+      "tags": ["High priority","Low effort", "New hardware",  "Done"],
+      "i":4
+    }
+  ]
+
+}
